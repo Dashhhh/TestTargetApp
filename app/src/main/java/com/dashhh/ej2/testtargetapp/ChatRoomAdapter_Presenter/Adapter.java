@@ -18,7 +18,6 @@ import java.util.ArrayList;
 
 public class Adapter extends RecyclerView.Adapter<Holder> {
 
-    private static final String TAG = "Main Room List";
     ArrayList<Set> data = new ArrayList<>();
     Context mContext;
 
@@ -51,13 +50,11 @@ public class Adapter extends RecyclerView.Adapter<Holder> {
 
     @Override
     public int getItemViewType(int position) {
-        Log.d("방송자채팅어댑터", "Adapter > getItemViewType()");
         return super.getItemViewType(position);
     }
 
     @Override
     public int getItemCount() {
-        Log.d("방송자채팅어댑터", "Adapter > getItemCount()");
         return data.size();
     }
 }
